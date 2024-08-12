@@ -1,0 +1,16 @@
+# Dicionário de dados - Schema Serving
+
+- [Tabelas](./Tabelas)
+- [Meta 1](./Meta 1)
+- [Meta 2](./Meta 2)
+- [Meta 3](./Meta 3)
+- [Meta 6](./Meta 6)
+- [Meta 10](./Meta 10)
+- [Meta 11](./Meta 11)
+- [Meta 12](./Meta 12)
+- [Meta 13](./Meta 13)
+- [Meta 14](./Meta 14)
+- [Meta 16](./Meta 16)
+- [Meta 20](./Meta 20)
+- [FCT_INFO_ESTADOS](./FCT_INFO_ESTADOS)
+- [FCT_INFO_MUNICIPIOS](./FCT_INFO_MUNICIPIOS)

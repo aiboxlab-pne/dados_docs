@@ -1,0 +1,5 @@
+site_name: Dados_docs
+docs_dir: docs
+
+theme:
+  name:  mkdocs
