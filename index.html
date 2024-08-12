@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Dados_docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Dados_docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">+PNE - Team Dados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dict</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="dict/serving/" class="dropdown-item">Dicionário de dados - Schema Serving</a>
+</li>
+                                    
+<li>
+    <a href="dict/staging/" class="dropdown-item">Dicionário de dados - Schema Staging</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Serving</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="dict/serving/FCT_INFO_ESTADOS/" class="dropdown-item">FCT INFO ESTADOS</a>
+</li>
+            
+<li>
+    <a href="dict/serving/FCT_INFO_MUNICIPIOS/" class="dropdown-item">FCT INFO MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%201/" class="dropdown-item">Meta 1</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2010/" class="dropdown-item">Meta 10</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2011/" class="dropdown-item">Meta 11</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2012/" class="dropdown-item">Meta 12</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2013/" class="dropdown-item">Meta 13</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2014/" class="dropdown-item">Meta 14</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2016/" class="dropdown-item">Meta 16</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%202/" class="dropdown-item">Meta 2</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%2020/" class="dropdown-item">Meta 20</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%203/" class="dropdown-item">Meta 3</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Meta%206/" class="dropdown-item">Meta 6</a>
+</li>
+            
+<li>
+    <a href="dict/serving/Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Staging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="dict/staging/DIM_ECONOMICOS_ESTADO/" class="dropdown-item">DIM ECONOMICOS ESTADO</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_ECONOMICOS_MUNICIPIO/" class="dropdown-item">DIM ECONOMICOS MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_ESTADOS/" class="dropdown-item">DIM ESTADOS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_FAIXAS_ETARIAS/" class="dropdown-item">DIM FAIXAS ETARIAS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_METODOS_POPULACIONAIS/" class="dropdown-item">DIM METODOS POPULACIONAIS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_MUNICIPIOS/" class="dropdown-item">DIM MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_REGIAO/" class="dropdown-item">DIM REGIAO</a>
+</li>
+            
+<li>
+    <a href="dict/staging/DIM_SICONFI_MUNICIPIOS/" class="dropdown-item">DIM SICONFI MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_CENSO_EDUC_SUPERIOR_CURSOS/" class="dropdown-item">FCT CENSO EDUC SUPERIOR CURSOS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_CENSO_EDUC_SUPERIOR_IES/" class="dropdown-item">FCT CENSO EDUC SUPERIOR IES</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_CENSO_IBGE_ESTADO/" class="dropdown-item">FCT CENSO IBGE ESTADO</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_CENSO_IBGE_MUNICIPIO/" class="dropdown-item">FCT CENSO IBGE MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_ESCOLAS_PUBLICAS_INTEGRAL_6B/" class="dropdown-item">FCT ESCOLAS PUBLICAS INTEGRAL 6B</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_FORMACAO_DOCENTE/" class="dropdown-item">FCT FORMACAO DOCENTE</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_GEOCAPES_DISCENTES_POS/" class="dropdown-item">FCT GEOCAPES DISCENTES POS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_MATRICULAS/" class="dropdown-item">FCT MATRICULAS</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_MATRICULAS_EJA_10A/" class="dropdown-item">FCT MATRICULAS EJA 10A</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_MATRICULAS_EPT/" class="dropdown-item">FCT MATRICULAS EPT</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_MATRICULAS_IND_3B/" class="dropdown-item">FCT MATRICULAS IND 3B</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_MATRICULAS_NOVO_CENSO/" class="dropdown-item">FCT MATRICULAS NOVO CENSO</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_MATRICULAS_PUBLICA_INTEGRAL_6A/" class="dropdown-item">FCT MATRICULAS PUBLICA INTEGRAL 6A</a>
+</li>
+            
+<li>
+    <a href="dict/staging/FCT_PROJECAO_POPULACIONAL/" class="dropdown-item">FCT PROJECAO POPULACIONAL</a>
+</li>
+            
+<li>
+    <a href="dict/staging/Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Etl</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="etl/projecao_pop/" class="dropdown-item">Projeção populacional por município e idade</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Meta</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="meta/01/" class="dropdown-item">Meta 1 - Educação Infantil</a>
+</li>
+                                    
+<li>
+    <a href="meta/02/" class="dropdown-item">Meta 2 – Ensino Fundamental</a>
+</li>
+                                    
+<li>
+    <a href="meta/03/" class="dropdown-item">Meta 3 – Ensino Médio</a>
+</li>
+                                    
+<li>
+    <a href="meta/04/" class="dropdown-item">Meta 4 – Inclusão</a>
+</li>
+                                    
+<li>
+    <a href="meta/05/" class="dropdown-item">Meta 5 – Alfabetização Infantil</a>
+</li>
+                                    
+<li>
+    <a href="meta/06/" class="dropdown-item">Meta 6 – Educação Integral</a>
+</li>
+                                    
+<li>
+    <a href="meta/07/" class="dropdown-item">Meta 7 – Qualidade da Educação Básica/IDEB</a>
+</li>
+                                    
+<li>
+    <a href="meta/08/" class="dropdown-item">Meta 8 – Elevação da escolaridade/Diversidade</a>
+</li>
+                                    
+<li>
+    <a href="meta/09/" class="dropdown-item">Meta 9 – Alfabetização de jovens e adultos</a>
+</li>
+                                    
+<li>
+    <a href="meta/10/" class="dropdown-item">Meta 10 – EJA Integrada</a>
+</li>
+                                    
+<li>
+    <a href="meta/11/" class="dropdown-item">Meta 11 – Educação Profissional</a>
+</li>
+                                    
+<li>
+    <a href="meta/12/" class="dropdown-item">Meta 12 – Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="meta/13/" class="dropdown-item">Meta 13 – Qualidade da Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="meta/14/" class="dropdown-item">Meta 14 – Pós-Graduação</a>
+</li>
+                                    
+<li>
+    <a href="meta/15/" class="dropdown-item">Meta 15 – Profissionais de Educação</a>
+</li>
+                                    
+<li>
+    <a href="meta/16/" class="dropdown-item">Meta 16 – Formação</a>
+</li>
+                                    
+<li>
+    <a href="meta/17/" class="dropdown-item">Meta 17 – Valorização dos Profissionais do Magistério</a>
+</li>
+                                    
+<li>
+    <a href="meta/18/" class="dropdown-item">Meta 18 – Planos de Carreira</a>
+</li>
+                                    
+<li>
+    <a href="meta/19/" class="dropdown-item">Meta 19 – Gestão Democrática</a>
+</li>
+                                    
+<li>
+    <a href="meta/20/" class="dropdown-item">Meta 20 – Financiamento da Educação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="dict/serving/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#pne-team-dados" class="nav-link">+PNE - Team Dados</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#metas" class="nav-link">Metas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#transformacoes" class="nav-link">Transformações</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#arquitetura" class="nav-link">Arquitetura</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#dados-disponiveis-dw" class="nav-link">Dados disponíveis (DW)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#repositorio-git" class="nav-link">Repositório GIT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#equipe" class="nav-link">Equipe</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pne-team-dados">+PNE - Team Dados</h1>
+<p>Documentação de metas, transformações e dados disponíveis</p>
+<h2 id="metas">Metas</h2>
+<p>Para cumprir o Plano Nacional de Educação (PNE) aprovado pela LEI N° 13.005/2014 com vigência de 10 anos, 20 metas totalizando 38 indicadores foram estipulados. Esta seção formaliza o processo para geração destes indicadores, detalhando fontes dos dados, suas transformações, variáveis e como são calculados.</p>
+<p>Os nomes e descrições das metas, bem como dos indicadores, foram retirados do site <a href="http://simec.mec.gov.br/pde/grafico_pne.php">PNE em movimento</a>. As estratégias de cada meta podem ser lidas no portal do <a href="https://pne.mec.gov.br/18-planos-subnacionais-de-educacao/543-plano-nacional-de-educacao-lei-n-13-005-2014">PNE</a>.</p>
+<ul>
+<li>
+<p><a href="./meta/01">Meta 1 - Educação Infantil</a></p>
+</li>
+<li>
+<p><a href="./meta/02">Meta 2 – Ensino Fundamental</a></p>
+</li>
+<li>
+<p><a href="./meta/03">Meta 3 – Ensino Médio</a></p>
+</li>
+<li>
+<p><a href="./meta/04">Meta 4 – Inclusão</a></p>
+</li>
+<li>
+<p><a href="./meta/05">Meta 5 – Alfabetização Infantil</a></p>
+</li>
+<li>
+<p><a href="./meta/06">Meta 6 – Educação Integral</a></p>
+</li>
+<li>
+<p><a href="./meta/07">Meta 7 – Qualidade da Educação Básica/IDEB</a></p>
+</li>
+<li>
+<p><a href="./meta/08">Meta 8 – Elevação da escolaridade/Diversidade</a></p>
+</li>
+<li>
+<p><a href="./meta/09">Meta 9 – Alfabetização de jovens e adultos</a></p>
+</li>
+<li>
+<p><a href="./meta/10">Meta 10 – EJA Integrada</a></p>
+</li>
+<li>
+<p><a href="./meta/11">Meta 11 – Educação Profissional</a></p>
+</li>
+<li>
+<p><a href="./meta/12">Meta 12 – Educação Superior</a></p>
+</li>
+<li>
+<p><a href="./meta/13">Meta 13 – Qualidade da Educação Superior</a></p>
+</li>
+<li>
+<p><a href="./meta/14">Meta 14 – Pós-Graduação</a></p>
+</li>
+<li>
+<p><a href="./meta/15">Meta 15 – Profissionais de Educação</a></p>
+</li>
+<li>
+<p><a href="./meta/16">Meta 16 – Formação</a></p>
+</li>
+<li>
+<p><a href="./meta/17">Meta 17 – Valorização dos Profissionais do Magistério</a></p>
+</li>
+<li>
+<p><a href="./meta/18">Meta 18 – Planos de Carreira</a></p>
+</li>
+<li>
+<p><a href="./meta/19">Meta 19 – Gestão Democrática</a></p>
+</li>
+<li>
+<p><a href="./meta/20">Meta 20 – Financiamento da Educação</a></p>
+</li>
+</ul>
+<h2 id="transformacoes">Transformações</h2>
+<ul>
+<li><a href="etl/projecao_pop/">Projeção Populacional</a></li>
+</ul>
+<h2 id="arquitetura">Arquitetura</h2>
+<p><img alt="BD staging" src="img/arquitetura.png" /></p>
+<p>Visando manter um fluxo de coleta, transformação, ingestão e publicação de dados necessários ao projeto, a arquitetura que será apresentada está em adaptação contínua para assegurar que atende às exigências atuais das equipes que dela dependem.</p>
+<p>Das fonte de dados, os dados educacionais são coletados do <em>INEP</em>, enquanto os dados socioeconômicos são coletados do <a href="http://www.atlasbrasil.org.br/"><strong>AtlasBR</strong></a>. Já os dados bases de estimativas populacionais, são coletados do <em>IBGE</em>.
+Os dados brutos extraídos se diferenciam entre os formatos “xlsx, csv, html ou txt”, sendo arquivados num teamdrive de acesso restrito.</p>
+<p>As estimativas populacionais segmentadas por município e idade, são calculadas pela ferramenta <a href="https://pypi.org/project/popro/"><em>Popro</em></a>, desenvolvida internamente. Tanto o processo de exploração e transformação dos dados Educacionais quanto os Populacionais são realizados com uso intenso da biblioteca <a href="https://pandas.pydata.org/"><em>Pandas</em></a>, através de notebooks python onde parte deles são executados e parametrizados com uso do <a href="https://github.com/nteract/papermill"><em>Papermill</em></a>. Atualmente a arquitetura de dados está em migração para o Data Build Tool (<a href="https://www.getdbt.com/"><em>DBT</em></a>) como centralizador das transformações e documentações dos dados, bem como criação e ingestão das tabelas no banco de dados..
+A partir de um servidor dedicado através de conteinerização, os dados transformados são persistidos em banco de dados <a href="https://www.postgresql.org/"><em>PostgreSQL</em></a>. As ontologias são persistidas com <a href="https://ontop-vkg.org/"><em>Ontop</em></a>.
+Por fim, as apresentações de dados são realizadas através da ferramenta <a href="https://streamlit.io/"><em>Streamlit</em></a>.</p>
+<h2 id="dados-disponiveis-dw">Dados disponíveis (DW)</h2>
+<h3 id="data-build-tool-dbt">Data Build Tool (DBT)</h3>
+<p>Ver <a href="dbt/">documentação</a></p>
+<h3 id="staging">Staging</h3>
+<p>Ver <a href="dict/staging/">Dicionário de Dados</a></p>
+<p><img alt="BD Staging" src="img/dw_staging.png" />
+<code>Img: Diagrama DW staging</code>
+<a href="img/dw_staging_complete.png">ver imagem completa</a></p>
+<h3 id="serving">Serving</h3>
+<p>Ver <a href="dict/serving/">Dicionário de Dados</a></p>
+<p><img alt="BD Serving" src="img/dw_serving.png" />
+<code>Img: Diagrama DW serving</code></p>
+<p>Arquivos de modelagem: <a href="https://github.com/aiboxlab-pne/dados/tree/main/Modelagens%20dbdiagram/Modelagem%20Atual">txt e sql</a></p>
+<p>Instrução de Acesso ao DW online: [Em breve]</p>
+<h2 id="repositorio-git">Repositório GIT</h2>
+<p><a href="https://github.com/aiboxlab-pne/dados">github.com/aiboxlab-pne/dados</a></p>
+<h2 id="equipe">Equipe</h2>
+<ul>
+<li>Andreza Leite - Team Leader - andreza.leite@ufrpe.br</li>
+<li>Abílio Nogueira - Data Engineering - abilionbarros@gmail.com</li>
+<li><a href="https://github.com/derycck">Déryck</a> - Data Engineering</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-08-12 22:56:34.904917+00:00
+-->

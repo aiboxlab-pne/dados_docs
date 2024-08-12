@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>DIM METODOS POPULACIONAIS - Dados_docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Dados_docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">+PNE - Team Dados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dict</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../serving/" class="dropdown-item">Dicionário de dados - Schema Serving</a>
+</li>
+                                    
+<li>
+    <a href="../" class="dropdown-item">Dicionário de dados - Schema Staging</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Serving</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../serving/FCT_INFO_ESTADOS/" class="dropdown-item">FCT INFO ESTADOS</a>
+</li>
+            
+<li>
+    <a href="../../serving/FCT_INFO_MUNICIPIOS/" class="dropdown-item">FCT INFO MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%201/" class="dropdown-item">Meta 1</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2010/" class="dropdown-item">Meta 10</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2011/" class="dropdown-item">Meta 11</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2012/" class="dropdown-item">Meta 12</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2013/" class="dropdown-item">Meta 13</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2014/" class="dropdown-item">Meta 14</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2016/" class="dropdown-item">Meta 16</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%202/" class="dropdown-item">Meta 2</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2020/" class="dropdown-item">Meta 20</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%203/" class="dropdown-item">Meta 3</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%206/" class="dropdown-item">Meta 6</a>
+</li>
+            
+<li>
+    <a href="../../serving/Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Staging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../DIM_ECONOMICOS_ESTADO/" class="dropdown-item">DIM ECONOMICOS ESTADO</a>
+</li>
+            
+<li>
+    <a href="../DIM_ECONOMICOS_MUNICIPIO/" class="dropdown-item">DIM ECONOMICOS MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="../DIM_ESTADOS/" class="dropdown-item">DIM ESTADOS</a>
+</li>
+            
+<li>
+    <a href="../DIM_FAIXAS_ETARIAS/" class="dropdown-item">DIM FAIXAS ETARIAS</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">DIM METODOS POPULACIONAIS</a>
+</li>
+            
+<li>
+    <a href="../DIM_MUNICIPIOS/" class="dropdown-item">DIM MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../DIM_REGIAO/" class="dropdown-item">DIM REGIAO</a>
+</li>
+            
+<li>
+    <a href="../DIM_SICONFI_MUNICIPIOS/" class="dropdown-item">DIM SICONFI MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_EDUC_SUPERIOR_CURSOS/" class="dropdown-item">FCT CENSO EDUC SUPERIOR CURSOS</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_EDUC_SUPERIOR_IES/" class="dropdown-item">FCT CENSO EDUC SUPERIOR IES</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_IBGE_ESTADO/" class="dropdown-item">FCT CENSO IBGE ESTADO</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_IBGE_MUNICIPIO/" class="dropdown-item">FCT CENSO IBGE MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="../FCT_ESCOLAS_PUBLICAS_INTEGRAL_6B/" class="dropdown-item">FCT ESCOLAS PUBLICAS INTEGRAL 6B</a>
+</li>
+            
+<li>
+    <a href="../FCT_FORMACAO_DOCENTE/" class="dropdown-item">FCT FORMACAO DOCENTE</a>
+</li>
+            
+<li>
+    <a href="../FCT_GEOCAPES_DISCENTES_POS/" class="dropdown-item">FCT GEOCAPES DISCENTES POS</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS/" class="dropdown-item">FCT MATRICULAS</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_EJA_10A/" class="dropdown-item">FCT MATRICULAS EJA 10A</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_EPT/" class="dropdown-item">FCT MATRICULAS EPT</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_IND_3B/" class="dropdown-item">FCT MATRICULAS IND 3B</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_NOVO_CENSO/" class="dropdown-item">FCT MATRICULAS NOVO CENSO</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_PUBLICA_INTEGRAL_6A/" class="dropdown-item">FCT MATRICULAS PUBLICA INTEGRAL 6A</a>
+</li>
+            
+<li>
+    <a href="../FCT_PROJECAO_POPULACIONAL/" class="dropdown-item">FCT PROJECAO POPULACIONAL</a>
+</li>
+            
+<li>
+    <a href="../Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Etl</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../etl/projecao_pop/" class="dropdown-item">Projeção populacional por município e idade</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Meta</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../meta/01/" class="dropdown-item">Meta 1 - Educação Infantil</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/02/" class="dropdown-item">Meta 2 – Ensino Fundamental</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/03/" class="dropdown-item">Meta 3 – Ensino Médio</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/04/" class="dropdown-item">Meta 4 – Inclusão</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/05/" class="dropdown-item">Meta 5 – Alfabetização Infantil</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/06/" class="dropdown-item">Meta 6 – Educação Integral</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/07/" class="dropdown-item">Meta 7 – Qualidade da Educação Básica/IDEB</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/08/" class="dropdown-item">Meta 8 – Elevação da escolaridade/Diversidade</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/09/" class="dropdown-item">Meta 9 – Alfabetização de jovens e adultos</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/10/" class="dropdown-item">Meta 10 – EJA Integrada</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/11/" class="dropdown-item">Meta 11 – Educação Profissional</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/12/" class="dropdown-item">Meta 12 – Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/13/" class="dropdown-item">Meta 13 – Qualidade da Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/14/" class="dropdown-item">Meta 14 – Pós-Graduação</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/15/" class="dropdown-item">Meta 15 – Profissionais de Educação</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/16/" class="dropdown-item">Meta 16 – Formação</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/17/" class="dropdown-item">Meta 17 – Valorização dos Profissionais do Magistério</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/18/" class="dropdown-item">Meta 18 – Planos de Carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/19/" class="dropdown-item">Meta 19 – Gestão Democrática</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/20/" class="dropdown-item">Meta 20 – Financiamento da Educação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../DIM_FAIXAS_ETARIAS/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../DIM_MUNICIPIOS/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nome da Coluna</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Categorias</th>
+<th style="text-align: left;">Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">NOME_METODO</td>
+<td style="text-align: left;">Nome do método populacional utilizado para estimativa.</td>
+<td style="text-align: left;">VARCHAR</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">DESCRICAO_METODO</td>
+<td style="text-align: left;">Descrição do método utilizado na estimativa.</td>
+<td style="text-align: left;">VARCHAR</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

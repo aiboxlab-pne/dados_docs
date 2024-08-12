@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>FCT CENSO EDUC SUPERIOR CURSOS - Dados_docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Dados_docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">+PNE - Team Dados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dict</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../serving/" class="dropdown-item">Dicionário de dados - Schema Serving</a>
+</li>
+                                    
+<li>
+    <a href="../" class="dropdown-item">Dicionário de dados - Schema Staging</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Serving</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../serving/FCT_INFO_ESTADOS/" class="dropdown-item">FCT INFO ESTADOS</a>
+</li>
+            
+<li>
+    <a href="../../serving/FCT_INFO_MUNICIPIOS/" class="dropdown-item">FCT INFO MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%201/" class="dropdown-item">Meta 1</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2010/" class="dropdown-item">Meta 10</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2011/" class="dropdown-item">Meta 11</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2012/" class="dropdown-item">Meta 12</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2013/" class="dropdown-item">Meta 13</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2014/" class="dropdown-item">Meta 14</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2016/" class="dropdown-item">Meta 16</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%202/" class="dropdown-item">Meta 2</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%2020/" class="dropdown-item">Meta 20</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%203/" class="dropdown-item">Meta 3</a>
+</li>
+            
+<li>
+    <a href="../../serving/Meta%206/" class="dropdown-item">Meta 6</a>
+</li>
+            
+<li>
+    <a href="../../serving/Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Staging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../DIM_ECONOMICOS_ESTADO/" class="dropdown-item">DIM ECONOMICOS ESTADO</a>
+</li>
+            
+<li>
+    <a href="../DIM_ECONOMICOS_MUNICIPIO/" class="dropdown-item">DIM ECONOMICOS MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="../DIM_ESTADOS/" class="dropdown-item">DIM ESTADOS</a>
+</li>
+            
+<li>
+    <a href="../DIM_FAIXAS_ETARIAS/" class="dropdown-item">DIM FAIXAS ETARIAS</a>
+</li>
+            
+<li>
+    <a href="../DIM_METODOS_POPULACIONAIS/" class="dropdown-item">DIM METODOS POPULACIONAIS</a>
+</li>
+            
+<li>
+    <a href="../DIM_MUNICIPIOS/" class="dropdown-item">DIM MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../DIM_REGIAO/" class="dropdown-item">DIM REGIAO</a>
+</li>
+            
+<li>
+    <a href="../DIM_SICONFI_MUNICIPIOS/" class="dropdown-item">DIM SICONFI MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">FCT CENSO EDUC SUPERIOR CURSOS</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_EDUC_SUPERIOR_IES/" class="dropdown-item">FCT CENSO EDUC SUPERIOR IES</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_IBGE_ESTADO/" class="dropdown-item">FCT CENSO IBGE ESTADO</a>
+</li>
+            
+<li>
+    <a href="../FCT_CENSO_IBGE_MUNICIPIO/" class="dropdown-item">FCT CENSO IBGE MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="../FCT_ESCOLAS_PUBLICAS_INTEGRAL_6B/" class="dropdown-item">FCT ESCOLAS PUBLICAS INTEGRAL 6B</a>
+</li>
+            
+<li>
+    <a href="../FCT_FORMACAO_DOCENTE/" class="dropdown-item">FCT FORMACAO DOCENTE</a>
+</li>
+            
+<li>
+    <a href="../FCT_GEOCAPES_DISCENTES_POS/" class="dropdown-item">FCT GEOCAPES DISCENTES POS</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS/" class="dropdown-item">FCT MATRICULAS</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_EJA_10A/" class="dropdown-item">FCT MATRICULAS EJA 10A</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_EPT/" class="dropdown-item">FCT MATRICULAS EPT</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_IND_3B/" class="dropdown-item">FCT MATRICULAS IND 3B</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_NOVO_CENSO/" class="dropdown-item">FCT MATRICULAS NOVO CENSO</a>
+</li>
+            
+<li>
+    <a href="../FCT_MATRICULAS_PUBLICA_INTEGRAL_6A/" class="dropdown-item">FCT MATRICULAS PUBLICA INTEGRAL 6A</a>
+</li>
+            
+<li>
+    <a href="../FCT_PROJECAO_POPULACIONAL/" class="dropdown-item">FCT PROJECAO POPULACIONAL</a>
+</li>
+            
+<li>
+    <a href="../Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Etl</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../etl/projecao_pop/" class="dropdown-item">Projeção populacional por município e idade</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Meta</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../meta/01/" class="dropdown-item">Meta 1 - Educação Infantil</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/02/" class="dropdown-item">Meta 2 – Ensino Fundamental</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/03/" class="dropdown-item">Meta 3 – Ensino Médio</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/04/" class="dropdown-item">Meta 4 – Inclusão</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/05/" class="dropdown-item">Meta 5 – Alfabetização Infantil</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/06/" class="dropdown-item">Meta 6 – Educação Integral</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/07/" class="dropdown-item">Meta 7 – Qualidade da Educação Básica/IDEB</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/08/" class="dropdown-item">Meta 8 – Elevação da escolaridade/Diversidade</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/09/" class="dropdown-item">Meta 9 – Alfabetização de jovens e adultos</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/10/" class="dropdown-item">Meta 10 – EJA Integrada</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/11/" class="dropdown-item">Meta 11 – Educação Profissional</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/12/" class="dropdown-item">Meta 12 – Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/13/" class="dropdown-item">Meta 13 – Qualidade da Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/14/" class="dropdown-item">Meta 14 – Pós-Graduação</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/15/" class="dropdown-item">Meta 15 – Profissionais de Educação</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/16/" class="dropdown-item">Meta 16 – Formação</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/17/" class="dropdown-item">Meta 17 – Valorização dos Profissionais do Magistério</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/18/" class="dropdown-item">Meta 18 – Planos de Carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/19/" class="dropdown-item">Meta 19 – Gestão Democrática</a>
+</li>
+                                    
+<li>
+    <a href="../../../meta/20/" class="dropdown-item">Meta 20 – Financiamento da Educação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../DIM_SICONFI_MUNICIPIOS/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../FCT_CENSO_EDUC_SUPERIOR_IES/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nome da Coluna</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Categorias</th>
+<th style="text-align: left;">Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ID_FCT_CENSO_EDUC_SUPERIOR_CURSOS</td>
+<td style="text-align: left;">ID da tabela</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NU_ANO_CENSO</td>
+<td style="text-align: left;">Ano de referência do Censo da Educação Superior</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">FK_MUNICIPIO_CODIGO</td>
+<td style="text-align: left;">Código do município</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">FK_ESTADO_CODIGO</td>
+<td style="text-align: left;">Código do Estado</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">IN_CAPITAL</td>
+<td style="text-align: left;">Informa se o local de oferta do curso está localizado na capital da Unidade da Federação</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">0. Não</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">1. Sim</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_DIMENSAO</td>
+<td style="text-align: left;">Tipo de dimensão geográfica dos cursos presenciais e a distância ofertados no Brasil e também por instituições brasileiras no exterior</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">1. Cursos presenciais ofertados no Brasil</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Cursos a distância ofertados no Brasil</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">3. Cursos a distância com dimensão de dados somente a nível Brasil</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">4. Cursos a distância ofertados por instituições brasileiras no exterior</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_ORGANIZACAO_ACADEMICA</td>
+<td style="text-align: left;">Tipo de Organização Acadêmica da IES</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">1. Universidade</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Centro Universitário</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">3. Faculdade</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">4. Instituto Federal de Educação, Ciência e Tecnologia</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">5. Centro Federal de Educação Tecnológica</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_CATEGORIA_ADMINISTRATIVA</td>
+<td style="text-align: left;">Tipo de Categoria Administrativa da IES</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">1. Pública Federal</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Pública Estadual</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">3. Pública Municipal</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">4. Privada com fins lucrativos</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">5. Privada sem fins lucrativos</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">6. Privada - Particular em sentido estrito</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">7. Especial</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">8. Privada comunitária</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">9. Privada confessional</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_REDE</td>
+<td style="text-align: left;">Rede de Ensino</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">1. Pública</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Privada</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CO_IES</td>
+<td style="text-align: left;">Código da Instituição</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NO_CURSO</td>
+<td style="text-align: left;">Nome do Curso</td>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CO_CURSO</td>
+<td style="text-align: left;">Código do Curso</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NO_CINE_ROTULO</td>
+<td style="text-align: left;">Nome do curso, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CO_CINE_ROTULO</td>
+<td style="text-align: left;">Código de identificação do curso, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CO_CINE_AREA_GERAL</td>
+<td style="text-align: left;">Código de identificação da área geral, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NO_CINE_AREA_GERAL</td>
+<td style="text-align: left;">Nome da área geral, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CO_CINE_AREA_ESPECIFICA</td>
+<td style="text-align: left;">Código de identificação da área específica, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NO_CINE_AREA_ESPECIFICA</td>
+<td style="text-align: left;">Nome da área específica, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CO_CINE_AREA_DETALHADA</td>
+<td style="text-align: left;">Código de identificação da área detalhada, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NO_CINE_AREA_DETALHADA</td>
+<td style="text-align: left;">Nome da área detalhada, conforme adaptação da Classificação Internacional Normalizada da Educação Cine/Unesco</td>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_GRAU_ACADEMICO</td>
+<td style="text-align: left;">Tipo do grau acadêmico conferido ao aluno pela conclusão dos requisitos exigidos pelo curso</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">1. Bacharelado</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Licenciatura</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">3. Tecnológico</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">4. Bacharelado e Licenciatura</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(.) Não aplicável (cursos com nível acadêmico igual a sequencial de formação específica ou cursos de área básica de Ingresso)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">IN_GRATUITO</td>
+<td style="text-align: left;">Informa se o curso é gratuito</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">0. Não</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">1. Sim</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_MODALIDADE_ENSINO</td>
+<td style="text-align: left;">Tipo de modalidade de ensino do curso</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">1. Presencial</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Curso a distância</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TP_NIVEL_ACADEMICO</td>
+<td style="text-align: left;">Tipo de nível acadêmico do curso</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">1. Graduação</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">2. Sequencial de Formação Específica</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CURSO</td>
+<td style="text-align: left;">Número de cursos</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_TOTAL</td>
+<td style="text-align: left;">Quantidade total de vagas oferecidas</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_TOTAL_DIURNO</td>
+<td style="text-align: left;">Quantidade total de vagas oferecidas no turno diurno</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_TOTAL_NOTURNO</td>
+<td style="text-align: left;">Quantidade total de vagas oferecidas no turno noturno</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_TOTAL_EAD</td>
+<td style="text-align: left;">Quantidade total de vagas oferecidas no curso a distância</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_NOVA</td>
+<td style="text-align: left;">Quantidade de vagas novas oferecidas</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_PROC_SELETIVO</td>
+<td style="text-align: left;">Quantidade de vagas nos processos seletivos</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_REMANESC</td>
+<td style="text-align: left;">Quantidade de vagas remanescentes</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_VG_PROG_ESPECIAL</td>
+<td style="text-align: left;">Quantidade de vagas oferecidas para programas especiais</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSCRITO_TOTAL</td>
+<td style="text-align: left;">Quantidade total de inscritos</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSCRITO_TOTAL_DIURNO</td>
+<td style="text-align: left;">Quantidade total de inscritos no turno diurno</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSCRITO_TOTAL_NOTURNO</td>
+<td style="text-align: left;">Quantidade total de inscritos no turno noturno</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSCRITO_TOTAL_EAD</td>
+<td style="text-align: left;">Quantidade total de inscritos no curso a distância</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSC_VG_NOVA</td>
+<td style="text-align: left;">Quantidade de inscritos no processo seletivo de vagas novas</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSC_PROC_SELETIVO</td>
+<td style="text-align: left;">Quantidade de inscritos nos processos seletivos</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSC_VG_REMANESC</td>
+<td style="text-align: left;">Quantidade de inscritos no processo seletivo de vagas remanescentes</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_INSC_VG_PROG_ESPECIAL</td>
+<td style="text-align: left;">Quantidade de inscritos no processo seletivo de vagas oferecidas para programas especiais</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING</td>
+<td style="text-align: left;">Quantidade de ingressantes</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">Cálculo de ingressantes: soma do número de alunos com data de ingresso de 01 de janeiro e 01 de julho do ano de referência do censo</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FEM</td>
+<td style="text-align: left;">Quantidade de ingressantes do sexo feminino</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_MASC</td>
+<td style="text-align: left;">Quantidade de ingressantes do sexo masculino</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_DIURNO</td>
+<td style="text-align: left;">Quantidade de ingressantes no turno diurno</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_NOTURNO</td>
+<td style="text-align: left;">Quantidade de ingressantes no turno noturno</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_VG_NOVA</td>
+<td style="text-align: left;">Quantidade de ingressantes em vagas novas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_VESTIBULAR</td>
+<td style="text-align: left;">Quantidade de ingressantes por vestibular</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_ENEM</td>
+<td style="text-align: left;">Quantidade de ingressantes pelo ENEM</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_AVALIACAO_SERIADA</td>
+<td style="text-align: left;">Quantidade de ingressantes por meio da avaliação seriada</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_SELECAO_SIMPLIFICA</td>
+<td style="text-align: left;">Quantidade de ingressantes por meio de seleção simplificada</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_EGR</td>
+<td style="text-align: left;">Quantidade de alunos que se formaram em um curso de Bacharelado Interdisciplinar ou Licenciatura Interdisciplinar e que ingressaram em um curso de terminalidade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_OUTRO_TIPO_SELECAO</td>
+<td style="text-align: left;">Quantidade de ingressantes em outro tipo de seleção</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PROC_SELETIVO</td>
+<td style="text-align: left;">Quantidade de ingressantes nos processos seletivos</td>
+<td style="text-align: left;">INT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_VG_REMANESC</td>
+<td style="text-align: left;">Quantidade de ingressantes por meio de vagas remanescentes</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_VG_PROG_ESPECIAL</td>
+<td style="text-align: left;">Quantidade de ingressantes por meio de vagas para programas especiais</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_OUTRA_FORMA</td>
+<td style="text-align: left;">Quantidade de ingressantes por outras formas de ingresso</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_0_17</td>
+<td style="text-align: left;">Quantidade de ingressantes - Até 17 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_18_24</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 18 a 24 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_25_29</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 25 a 29 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_30_34</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 30 a 34 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_35_39</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 35 a 39 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_40_49</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 40 a 49 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_50_59</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 50 a 59 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_60_MAIS</td>
+<td style="text-align: left;">Quantidade de ingressantes - De 60 ou mais anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_BRANCA</td>
+<td style="text-align: left;">Quantidade de ingressantes - Cor/Raça Branca</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PRETA</td>
+<td style="text-align: left;">Quantidade de ingressantes - Cor/Raça Preta</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PARDA</td>
+<td style="text-align: left;">Quantidade de ingressantes - Cor/Raça Parda</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_AMARELA</td>
+<td style="text-align: left;">Quantidade de ingressantes - Cor/Raça Amarela</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_INDIGENA</td>
+<td style="text-align: left;">Quantidade de ingressantes - Cor/Raça Indígena</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_CORND</td>
+<td style="text-align: left;">Quantidade de ingressantes - Cor/Raça não dispõe da informação ou não declarada</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT</td>
+<td style="text-align: left;">Quantidade de matrículas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">Cálculo de matrículas: soma do número de alunos com situação de vínculo ao curso igual a: Cursando e/ou Formado</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FEM</td>
+<td style="text-align: left;">Quantidade de matrículas do sexo feminino</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_MASC</td>
+<td style="text-align: left;">Quantidade de matrículas do sexo masculino</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_DIURNO</td>
+<td style="text-align: left;">Quantidade de matrículas - turno diurno</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_NOTURNO</td>
+<td style="text-align: left;">Quantidade de matrículas - turno noturno</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_0_17</td>
+<td style="text-align: left;">Quantidade de matrículas - Até 17 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_18_24</td>
+<td style="text-align: left;">Quantidade de matrículas - De 18 a 24 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_25_29</td>
+<td style="text-align: left;">Quantidade de matrículas - De 25 a 29 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_30_34</td>
+<td style="text-align: left;">Quantidade de matrículas - De 30 a 34 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_35_39</td>
+<td style="text-align: left;">Quantidade de matrículas - De 35 a 39 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_40_49</td>
+<td style="text-align: left;">Quantidade de matrículas - De 40 a 49 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_50_59</td>
+<td style="text-align: left;">Quantidade de matrículas - De 50 a 59 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_60_MAIS</td>
+<td style="text-align: left;">Quantidade de matrículas - De 60 ou mais anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_BRANCA</td>
+<td style="text-align: left;">Quantidade de matrículas - Cor/Raça Branca</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PRETA</td>
+<td style="text-align: left;">Quantidade de matrículas - Cor/Raça Preta</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PARDA</td>
+<td style="text-align: left;">Quantidade de matrículas - Cor/Raça Parda</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_AMARELA</td>
+<td style="text-align: left;">Quantidade de matrículas - Cor/Raça Amarela</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_INDIGENA</td>
+<td style="text-align: left;">Quantidade de matrículas - Cor/Raça Indígena</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_CORND</td>
+<td style="text-align: left;">Quantidade de matrículas - Cor/Raça não dispõe da informação ou não declarada</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC</td>
+<td style="text-align: left;">Quantidade de concluintes</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FEM</td>
+<td style="text-align: left;">Quantidade de concluintes do sexo feminino</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_MASC</td>
+<td style="text-align: left;">Quantidade de concluintes do sexo masculino</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_DIURNO</td>
+<td style="text-align: left;">Quantidade de concluintes - turno diurno</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_NOTURNO</td>
+<td style="text-align: left;">Quantidade de concluintes - turno noturno</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;">(.) Não aplicável (Curso a distância)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_0_17</td>
+<td style="text-align: left;">Quantidade de concluintes - Até 17 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_18_24</td>
+<td style="text-align: left;">Quantidade de concluintes - De 18 a 24 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_25_29</td>
+<td style="text-align: left;">Quantidade de concluintes - De 25 a 29 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_30_34</td>
+<td style="text-align: left;">Quantidade de concluintes - De 30 a 34 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_35_39</td>
+<td style="text-align: left;">Quantidade de concluintes - De 35 a 39 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_40_49</td>
+<td style="text-align: left;">Quantidade de concluintes - De 40 a 49 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_50_59</td>
+<td style="text-align: left;">Quantidade de concluintes - De 50 a 59 anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_60_MAIS</td>
+<td style="text-align: left;">Quantidade de concluintes - De 60 ou mais anos de idade</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_BRANCA</td>
+<td style="text-align: left;">Quantidade de concluintes - Cor/Raça Branca</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PRETA</td>
+<td style="text-align: left;">Quantidade de concluintes - Cor/Raça Preta</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PARDA</td>
+<td style="text-align: left;">Quantidade de concluintes - Cor/Raça Parda</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_AMARELA</td>
+<td style="text-align: left;">Quantidade de concluintes - Cor/Raça Amarela</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_INDIGENA</td>
+<td style="text-align: left;">Quantidade de concluintes - Cor/Raça Indígena</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_CORND</td>
+<td style="text-align: left;">Quantidade de concluintes - Cor/Raça não dispõe da informação ou não declarada</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_NACBRAS</td>
+<td style="text-align: left;">Quantidade de ingressantes - nacionalidade brasileira ou brasileira - nascido no exterior ou naturalizado</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_NACESTRANG</td>
+<td style="text-align: left;">Quantidade de ingressantes - nacionalidade estrangeira</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_NACBRAS</td>
+<td style="text-align: left;">Quantidade de matrículas - nacionalidade brasileira ou brasileira - nascido no exterior ou naturalizado</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_NACESTRANG</td>
+<td style="text-align: left;">Quantidade de matrículas - nacionalidade estrangeira</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_NACBRAS</td>
+<td style="text-align: left;">Quantidade de concluintes - nacionalidade brasileira ou brasileira - nascido no exterior ou naturalizado</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_NACESTRANG</td>
+<td style="text-align: left;">Quantidade de concluintes - nacionalidade estrangeira</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ALUNO_DEFICIENTE</td>
+<td style="text-align: left;">Quantidade de alunos com deficiência, transtorno global do desenvolvimento ou altas habilidades/superdotação</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_DEFICIENTE</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos com deficiência, transtorno global do desenvolvimento ou altas habilidades/superdotação</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_DEFICIENTE</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos com deficiência, transtorno global do desenvolvimento ou altas habilidades/superdotação</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_DEFICIENTE</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos com deficiência, transtorno global do desenvolvimento ou altas habilidades/superdotação</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FINANC</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FINANC_REEMB</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil reembolsável</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FIES</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil reembolsável  - FIES</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RPFIES</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil reembolsável - administrado pela instituição</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FINANC_REEMB_OUTROS</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil reembolsável - pelo governo estadual, municipal, entidades externas à IES e outras entidades</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FINANC_NREEMB</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil não reembolsável</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PROUNII</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil não reembolsável  - PROUNI Integral</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PROUNIP</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil não reembolsável  - PROUNI Parcial</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_NRPFIES</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil não reembolsável - administrado pela instituição</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_FINANC_NREEMB_OUTROS</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que utilizam financiamento estudantil não reembolsável - pelo governo estadual, municipal, entidades externas à IES e outras entidades</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FINANC</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FINANC_REEMB</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil  reembolsável</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FIES</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil reembolsável  - FIES</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RPFIES</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil reembolsável - administrado pela instituição</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FINANC_REEMB_OUTROS</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil reembolsável - pelo governo estadual, municipal, entidades externas à IES e outras entidades</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FINANC_NREEMB</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil não reembolsável</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PROUNII</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil não reembolsável  - PROUNI Integral</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PROUNIP</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil não reembolsável  - PROUNI Parcial</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_NRPFIES</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil não reembolsável - administrado pela instituição</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_FINANC_NREEMB_OUTROS</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que utilizam financiamento estudantil não reembolsável - pelo governo estadual, municipal, entidades externas à IES e outras entidades</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FINANC</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FINANC_REEMB</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil reembolsável</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FIES</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil reembolsável  - FIES</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RPFIES</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil reembolsável - administrado pela instituição</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FINANC_REEMB_OUTROS</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil reembolsável - pelo governo estadual, municipal, entidades externas à IES e outras entidades</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FINANC_NREEMB</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil não reembolsável</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PROUNII</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil não reembolsável  - PROUNI Integral</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PROUNIP</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil não reembolsável  - PROUNI Parcial</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_NRPFIES</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil não reembolsável - administrado pela instituição</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_FINANC_NREEMB_OUTROS</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que utilizam financiamento estudantil não reembolsável - pelo governo estadual, municipal, entidades externas à IES e outras entidades</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RESERVA_VAGA</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que participam do programa de reserva de vagas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RVREDEPUBLICA</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que participam do programa de reserva de vagas - escola pública</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RVETNICO</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que participam do programa de reserva de vagas - cunho étnico</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RVPDEF</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que participam do programa de reserva de vagas - pessoas com deficiência</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RVSOCIAL_RF</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que participam do programa de reserva de vagas - cunho social/renda familiar</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_RVOUTROS</td>
+<td style="text-align: left;">Quantidade de ingressantes - alunos que participam do programa de reserva de vagas - outros tipos</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RESERVA_VAGA</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que participam do programa de reserva de vagas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RVREDEPUBLICA</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que participam do programa de reserva de vagas - escola pública</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RVETNICO</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que participam do programa de reserva de vagas - cunho étnico</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RVPDEF</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que participam do programa de reserva de vagas - pessoas com deficiência</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RVSOCIAL_RF</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que participam do programa de reserva de vagas - cunho social/renda familiar</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_RVOUTROS</td>
+<td style="text-align: left;">Quantidade de matrículas - alunos que participam do programa de reserva de vagas - outros tipos</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RESERVA_VAGA</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que participam do programa de reserva de vagas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RVREDEPUBLICA</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que participam do programa de reserva de vagas - escola pública</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RVETNICO</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que participam do programa de reserva de vagas - cunho étnico</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RVPDEF</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que participam do programa de reserva de vagas - pessoas com deficiência</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RVSOCIAL_RF</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que participam do programa de reserva de vagas - cunho social/renda familiar</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_RVOUTROS</td>
+<td style="text-align: left;">Quantidade de concluintes - alunos que participam do programa de reserva de vagas - outros tipos</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_SIT_TRANCADA</td>
+<td style="text-align: left;">Quantidade de alunos com situação de vínculo no curso - matrícula trancada</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_SIT_DESVINCULADO</td>
+<td style="text-align: left;">Quantidade de alunos com situação de vínculo no curso - aluno desvinculado do curso</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_SIT_TRANSFERIDO</td>
+<td style="text-align: left;">Quantidade de alunos com situação de vínculo no curso - aluno transferido para outro curso da mesma IES</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_SIT_FALECIDO</td>
+<td style="text-align: left;">Quantidade de alunos com situação de vínculo no curso - aluno falecido</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PROCESCPUBLICA</td>
+<td style="text-align: left;">Quantidade de ingressantes que terminaram o ensino médio em escolas públicas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PROCESCPRIVADA</td>
+<td style="text-align: left;">Quantidade de ingressantes que terminaram o ensino médio em escolas privadas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PROCNAOINFORMADA</td>
+<td style="text-align: left;">Quantidade de ingressantes que não informaram o tipo de escola que terminaram o ensino médio</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PROCESCPUBLICA</td>
+<td style="text-align: left;">Quantidade de matrículas de alunos que terminaram o ensino médio em escolas públicas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PROCESCPRIVADA</td>
+<td style="text-align: left;">Quantidade de matrículas de alunos que terminaram o ensino médio em escolas privadas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PROCNAOINFORMADA</td>
+<td style="text-align: left;">Quantidade de matrículas de alunos que não informaram o tipo de escola que terminaram o ensino médio</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PROCESCPUBLICA</td>
+<td style="text-align: left;">Quantidade de concluintes que terminaram o ensino médio em escolas públicas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PROCESCPRIVADA</td>
+<td style="text-align: left;">Quantidade de concluintes que terminaram o ensino médio em escolas privadas</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PROCNAOINFORMADA</td>
+<td style="text-align: left;">Quantidade de concluintes que não informaram o tipo de escola que terminaram o ensino médio</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_PARFOR</td>
+<td style="text-align: left;">Quantidade de alunos que participam do programa especial para a formação de professores em exercício na rede pública de educação básica (PARFOR)</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_PARFOR</td>
+<td style="text-align: left;">Quantidade de ingressantes que participam do programa especial para a formação de professores em exercício na rede pública de educação básica (PARFOR)</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_PARFOR</td>
+<td style="text-align: left;">Quantidade de matrículas de alunos que participam do programa especial para a formação de professores em exercício na rede pública de educação básica (PARFOR)</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_PARFOR</td>
+<td style="text-align: left;">Quantidade de concluintes que participam do programa especial para a formação de professores em exercício na rede pública de educação básica (PARFOR)</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_APOIO_SOCIAL</td>
+<td style="text-align: left;">Quantidade de alunos que recebem algum tipo de apoio social</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_APOIO_SOCIAL</td>
+<td style="text-align: left;">Quantidade de ingressantes que recebem algum tipo de apoio social</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_APOIO_SOCIAL</td>
+<td style="text-align: left;">Quantidade de matrículas de alunos que recebem algum tipo de apoio social</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_APOIO_SOCIAL</td>
+<td style="text-align: left;">Quantidade de concluintes que recebem algum tipo de apoio social</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ATIV_EXTRACURRICULAR</td>
+<td style="text-align: left;">Quantidade de alunos que participam de algum tipo de atividade extracurricular</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_ATIV_EXTRACURRICULAR</td>
+<td style="text-align: left;">Quantidade de ingressantes que participam de algum tipo de atividade extracurricular</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_ATIV_EXTRACURRICULAR</td>
+<td style="text-align: left;">Quantidade de matrículas de alunos que participam de algum tipo de atividade extracurricular</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_ATIV_EXTRACURRICULAR</td>
+<td style="text-align: left;">Quantidade de concluintes que participam de algum tipo de atividade extracurricular</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MOB_ACADEMICA</td>
+<td style="text-align: left;">Quantidade de alunos que se vincularam temporariamente a outra instituição, sendo ela nacional ou internacional</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_ING_MOB_ACADEMICA</td>
+<td style="text-align: left;">Quantidade de ingressantes que se vincularam temporariamente a outra instituição, sendo ela nacional ou internacional</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_MAT_MOB_ACADEMICA</td>
+<td style="text-align: left;">Quantidade de alunos regularmente matriculados que se vincularam temporariamente a outra instituição, sendo ela nacional ou internacional</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QT_CONC_MOB_ACADEMICA</td>
+<td style="text-align: left;">Quantidade de concluintes que se vincularam temporariamente a outra instituição, sendo ela nacional ou internacional</td>
+<td style="text-align: left;">FLOAT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

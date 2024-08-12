@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Projeção populacional por município e idade - Dados_docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Dados_docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">+PNE - Team Dados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dict</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dict/serving/" class="dropdown-item">Dicionário de dados - Schema Serving</a>
+</li>
+                                    
+<li>
+    <a href="../../dict/staging/" class="dropdown-item">Dicionário de dados - Schema Staging</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Serving</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../dict/serving/FCT_INFO_ESTADOS/" class="dropdown-item">FCT INFO ESTADOS</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/FCT_INFO_MUNICIPIOS/" class="dropdown-item">FCT INFO MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%201/" class="dropdown-item">Meta 1</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2010/" class="dropdown-item">Meta 10</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2011/" class="dropdown-item">Meta 11</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2012/" class="dropdown-item">Meta 12</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2013/" class="dropdown-item">Meta 13</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2014/" class="dropdown-item">Meta 14</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2016/" class="dropdown-item">Meta 16</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%202/" class="dropdown-item">Meta 2</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%2020/" class="dropdown-item">Meta 20</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%203/" class="dropdown-item">Meta 3</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Meta%206/" class="dropdown-item">Meta 6</a>
+</li>
+            
+<li>
+    <a href="../../dict/serving/Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Staging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../dict/staging/DIM_ECONOMICOS_ESTADO/" class="dropdown-item">DIM ECONOMICOS ESTADO</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_ECONOMICOS_MUNICIPIO/" class="dropdown-item">DIM ECONOMICOS MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_ESTADOS/" class="dropdown-item">DIM ESTADOS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_FAIXAS_ETARIAS/" class="dropdown-item">DIM FAIXAS ETARIAS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_METODOS_POPULACIONAIS/" class="dropdown-item">DIM METODOS POPULACIONAIS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_MUNICIPIOS/" class="dropdown-item">DIM MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_REGIAO/" class="dropdown-item">DIM REGIAO</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/DIM_SICONFI_MUNICIPIOS/" class="dropdown-item">DIM SICONFI MUNICIPIOS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_CENSO_EDUC_SUPERIOR_CURSOS/" class="dropdown-item">FCT CENSO EDUC SUPERIOR CURSOS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_CENSO_EDUC_SUPERIOR_IES/" class="dropdown-item">FCT CENSO EDUC SUPERIOR IES</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_CENSO_IBGE_ESTADO/" class="dropdown-item">FCT CENSO IBGE ESTADO</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_CENSO_IBGE_MUNICIPIO/" class="dropdown-item">FCT CENSO IBGE MUNICIPIO</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_ESCOLAS_PUBLICAS_INTEGRAL_6B/" class="dropdown-item">FCT ESCOLAS PUBLICAS INTEGRAL 6B</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_FORMACAO_DOCENTE/" class="dropdown-item">FCT FORMACAO DOCENTE</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_GEOCAPES_DISCENTES_POS/" class="dropdown-item">FCT GEOCAPES DISCENTES POS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_MATRICULAS/" class="dropdown-item">FCT MATRICULAS</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_MATRICULAS_EJA_10A/" class="dropdown-item">FCT MATRICULAS EJA 10A</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_MATRICULAS_EPT/" class="dropdown-item">FCT MATRICULAS EPT</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_MATRICULAS_IND_3B/" class="dropdown-item">FCT MATRICULAS IND 3B</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_MATRICULAS_NOVO_CENSO/" class="dropdown-item">FCT MATRICULAS NOVO CENSO</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_MATRICULAS_PUBLICA_INTEGRAL_6A/" class="dropdown-item">FCT MATRICULAS PUBLICA INTEGRAL 6A</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/FCT_PROJECAO_POPULACIONAL/" class="dropdown-item">FCT PROJECAO POPULACIONAL</a>
+</li>
+            
+<li>
+    <a href="../../dict/staging/Tabelas/" class="dropdown-item">Tabelas</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Etl</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Projeção populacional por município e idade</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Meta</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meta/01/" class="dropdown-item">Meta 1 - Educação Infantil</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/02/" class="dropdown-item">Meta 2 – Ensino Fundamental</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/03/" class="dropdown-item">Meta 3 – Ensino Médio</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/04/" class="dropdown-item">Meta 4 – Inclusão</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/05/" class="dropdown-item">Meta 5 – Alfabetização Infantil</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/06/" class="dropdown-item">Meta 6 – Educação Integral</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/07/" class="dropdown-item">Meta 7 – Qualidade da Educação Básica/IDEB</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/08/" class="dropdown-item">Meta 8 – Elevação da escolaridade/Diversidade</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/09/" class="dropdown-item">Meta 9 – Alfabetização de jovens e adultos</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/10/" class="dropdown-item">Meta 10 – EJA Integrada</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/11/" class="dropdown-item">Meta 11 – Educação Profissional</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/12/" class="dropdown-item">Meta 12 – Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/13/" class="dropdown-item">Meta 13 – Qualidade da Educação Superior</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/14/" class="dropdown-item">Meta 14 – Pós-Graduação</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/15/" class="dropdown-item">Meta 15 – Profissionais de Educação</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/16/" class="dropdown-item">Meta 16 – Formação</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/17/" class="dropdown-item">Meta 17 – Valorização dos Profissionais do Magistério</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/18/" class="dropdown-item">Meta 18 – Planos de Carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/19/" class="dropdown-item">Meta 19 – Gestão Democrática</a>
+</li>
+                                    
+<li>
+    <a href="../../meta/20/" class="dropdown-item">Meta 20 – Financiamento da Educação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../dict/staging/Tabelas/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../meta/01/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#projecao-populacional-por-municipio-e-idade" class="nav-link">Projeção populacional por município e idade</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#fontes" class="nav-link">Fontes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#metodologia" class="nav-link">Metodologia</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#etl" class="nav-link">ETL</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="projecao-populacional-por-municipio-e-idade">Projeção populacional por município e idade</h1>
+<p>Por fontes oficiais do IBGE, não é obtido dados populacionais segmentado por Município e Idade. Sendo assim, uma metodologia de desagregação populacional a partir do Censo Demográfico e atualizado por dados anuais obtidos por órgãos oficiais se faz necessária.</p>
+<p><img alt="Projeção Populacional" src="../../img/fluxo_projecao_pop.jpg" />
+<code>Imagem:</code> Fluxo de dados</p>
+<h2 id="fontes">Fontes</h2>
+<ul>
+<li>Datasus:<ul>
+<li>nascidos: https://datasus.saude.gov.br/nascidos-vivos-desde-1994</li>
+<li>mortalidade: https://datasus.saude.gov.br/mortalidade-desde-1996-pela-cid-10<ul>
+<li>Filtro: faixa etária: menor 1 ano</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IBGE:<ul>
+<li>estimativas populacionais por município: https://ftp.ibge.gov.br/Estimativas_de_Populacao</li>
+<li>Censo demográfico: https://sidra.ibge.gov.br/tabela/200</li>
+<li>Extra:<ul>
+<li>Arquivo json de metadados capturado do fluxo de dados no navegador durante o carregamento do relatório no site do IBGE.
+<br /><br /><code>Observação:</code> Este arquivo é um dicionário de dados que relaciona os nomes das localidades existentes no relatório do Censo e seus códigos normalizados pelo IBGE. Este dicionário é necessário por os nomes de localidades no relatório não estarem compatíveis com as bases publicadas pelo IBGE que relaciona Nome e Código de localidade, tal como o relatório de estimativas populacionais. Assim os nomes das localidades não podem servir como chave de consolidação, sendo necessário resgatar o código da localidade.  A falta de compatibilidade se dá por variações na escrita dos nomes das localidades, como abreviações ou ausências de sinais ortográficos.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="metodologia">Metodologia</h2>
+<p><img alt="Metodologia Projeção Pop" src="../../img/metodo_estimativa_pop_tceduca.jpg" />
+<code>Imagem:</code> Metodologia Projeção Populacional</p>
+<p>Desagregação populacional por município e idade desenvolvida pelo TCEduca e publicada na nota técnica <a href="https://www.tcesc.tc.br/sites/default/files/2021-06/Metodologia%20Estima%C3%A7%C3%A3o%20Populacional.pdf">Memo. DAE n° 020/2021</a>.</p>
+<h2 id="etl">ETL</h2>
+<ul>
+<li>Pré processamento:  https://github.com/aiboxlab-pne/dados/tree/main/Scripts/ETL/Populacao/metodo-tceduca/notebook<ul>
+<li>1 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/notebook/exec_nascidos_por_ano_municipio.py">exec_nascidos_por_ano_municipio.py</a><ul>
+<li>Limpa e tabula os relatórios de input de nascidos</li>
+</ul>
+</li>
+<li>2 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/notebook/exec_mortalidade_menos_de_um_ano_por_ano.py">exec_mortalidade_menos_de_um_ano_por_ano.py</a><ul>
+<li>Limpa e tabula os relatórios de input de mortalidade</li>
+</ul>
+</li>
+<li>3 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/preprocess/exec_consolidador_nasc_mort.py">exec_consolidador_nasc_mort.py</a><ul>
+<li>Objetivos:<ul>
+<li>Consolida os ‘diversos relatórios de cada ano’ num único relatório.</li>
+</ul>
+</li>
+<li>Output:<ul>
+<li>Relatórios de nascidos por município</li>
+<li>Relatórios de mortalidade com menos de 1 ano  por município</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>4 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/preprocess/exec_censo_populacao_por_municipio.py">exec_censo_populacao_por_municipio.py</a><ul>
+<li>Limpa e tabula o relatório de input do último Censo demográfico. Também enriquece com código de localidade a partir do arquivo json de metadados.</li>
+<li>Output:<ul>
+<li>Relatório de censo demográfico por município e idade. Contém o total populacional por município segmentado por idade no ano do relatório.</li>
+<li>Relatório de censo demográfico por município. Contém o total populacional por município no ano do relatório.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>5 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/preprocess/exec_nascidos_sobrev_ano_municipio.py">exec_nascidos_sobrev_ano_municipio.py</a><ul>
+<li>Objetivo:<ul>
+<li>Processa o relatório de "nascidos por idade e município" com o de "mortalidade de 0 anos por idade e município", formando o relatório "Nascidos sobreviventes por ano e município". O relatório "Nascidos sobreviventes por ano e município" serve de input para a lib <a href="https://pypi.org/project/popro/">Popro</a>, que realiza o processo de desagregação populacional.</li>
+</ul>
+</li>
+<li>Input:<ul>
+<li>Relatório "nascidos_por_ano_municipio.csv".<ul>
+<li>Colunas: ['ano', 'uf_codigo', 'municipio_codigo', 'quantidade']</li>
+<li>Gerado via: <code>exec_consolidador_nasc_mort.py</code></li>
+</ul>
+</li>
+<li>Relatório "mortalidade_menos_de_um_ano_por_ano_por_municipio.csv".<ul>
+<li>Colunas: ['ano', 'uf_codigo', 'municipio_codigo', 'quantidade']</li>
+<li>Gerado via: <code>exec_consolidador_nasc_mort.py</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Output:<ul>
+<li>Relatório "nascidos_sobrev_ano_municipio.csv".<ul>
+<li>Colunas: ['ano', 'uf_codigo', 'municipio_codigo', 'nascidos_sobreviventes']</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>6 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/preprocess/Populacao%20por%20municipio/exec_estimativas_de_populacao.py">exec_estimativas_de_populacao.py</a><ul>
+<li>Objetivos:<ul>
+<li>Trata e tabula relatório de "Estimativas de População" extraído do <a href="https://ftp.ibge.gov.br/Estimativas_de_Populacao/">FTP do IBGE</a></li>
+</ul>
+</li>
+<li>Input:<ul>
+<li>input_file_path: caminho do relatório bruto</li>
+<li>year: ano do relatório</li>
+</ul>
+</li>
+<li>Output:<ul>
+<li>output_file_path: caminho do relatório tratado</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>7 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/preprocess/Populacao%20por%20municipio/exec_estimativas_de_populacao_cons.py">exec_estimativas_de_populacao_cons.py</a><ul>
+<li>Objetivos:<ul>
+<li>Consolida todos os relatório tabulados de estimativas de população</li>
+</ul>
+</li>
+<li>Input:<ul>
+<li>input_folder_path: Caminho da pasta onde se encontram os relatórios tabulados de estimati vas de população</li>
+</ul>
+</li>
+<li>Output:<ul>
+<li>output_file_path: Relatório estimativas_de_populacao_por_municipio. Relatório csv com colunas: ['ano', 'cod_uf', 'cod_munic', 'populacao_estimada']</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>8 - <a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/preprocess/exec_populacao_por_municipio_enriquecedor.py">exec_populacao_por_municipio_enriquecedor.py</a><ul>
+<li>Objetivos:<ul>
+<li>Consolida o “Relatório de censo demográfico por município” com o relatório de “Estimativa populacional por município”, apenas para acrescer os dados populacionais do ano do Censo.</li>
+</ul>
+</li>
+<li>input:<ul>
+<li>file_path_estimativas_populacao:<ul>
+<li>Relatório csv "estimativas_de_populacao_por_municipio" contendo os dados tabulados e consolidados de estimativas de população por município, faltando os dados do ano do Censo. Colunas: ['ano', 'cod_uf', 'cod_munic', 'populacao_estimada']</li>
+</ul>
+</li>
+<li>file_path_censo_municipio:<ul>
+<li>Relatório csv "censo_populacao_por_municipio"  contendo os dados tabulados do censo populacional por município no ano do Censo. Colunas: ['quantidade', 'municipio_nome', 'uf_sigla', 'municipio_codigo', 'uf_codigo', 'ano']</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Output:<ul>
+<li>file_path_populacao_por_municipio:<ul>
+<li>Relatório csv "populacao_por_municipio" contendo os dados populacionais tanto do ano do Censo quanto dos demais anos do relatório de estimativa populacional. Colunas: ['ano', 'cod_uf', 'cod_munic', 'quantidade']</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Desagregação:<ul>
+<li>Biblioteca: <a href="https://pypi.org/project/popro/">Popro - https://pypi.org/project/popro/</a></li>
+<li>Objetivos:<ul>
+<li>Gerar relatório populacional desagregado por município e idade, para todos os anos existentes nos relatórios de Nascidos sobreviventes e as idades existentes no relatório do Censo.</li>
+<li>Intervalo de dados:<ul>
+<li>Anos: 2014 a 2020.</li>
+<li>Idades: 0 a 24 anos.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/package/exec_desagregacao_populacional.py">exec_desagregacao_populacional.py</a><ul>
+<li>Objetivos:<ul>
+<li>Gera dados de estimativa populacional desagregado por ano, município e idade</li>
+</ul>
+</li>
+<li>Input:<ul>
+<li>Nascidos sobreviventes. Colunas: ['ano', 'uf_codigo', 'municipio_codigo', 'nascidos_sobreviventes']</li>
+<li>Censo demográfico por município e idade. Colunas: ['idade', 'quantidade', 'municipio_nome', 'uf_sigla', 'municipio_codigo', 'uf_codigo', 'ano']</li>
+<li>População por ano e municipio: Colunas: ['ano', 'cod_uf', 'cod_munic', 'quantidade']</li>
+</ul>
+</li>
+<li>Output:<ul>
+<li>Estimativa populacional desagregada por ano, município e idade. Colunas: ['ano', 'municipio_codigo', 'idade', 'quantidade_estimada', 'estado_codigo']</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Oportunidade de melhoria:<ul>
+<li>Ampliar fronteira de 24 anos.<ul>
+<li>Fronteira causada por o relatório do censo demográfico segmentar por idades únicas até 24 anos, onde depois dessa idade os dados são informados por faixas etárias.</li>
+<li>Recalcular o volume populacional do censo de 2010 para cada idade, com base nos microdados amostrais e as instruções para expansão em dados universais.</li>
+<li>Instrução para a expansão:<ul>
+<li>Acesso: <a href="https://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/Resultados_Gerais_da_Amostra/Microdados/Documentação.zip/Notas Metodológicas - Microdados da Amostra-2010.pdf">IBGE-Notas Metodológicas - Microdados da Amostra</a></li>
+<li>Dados de expansão<ul>
+<li>Acesso: <a href="https://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/Resultados_Gerais_da_Amostra/Expansao_xls.zip">IBGE-Expansao_xls</a></li>
+</ul>
+</li>
+<li>Nota: Necessita de tabela que relaciona 'área de ponderação' com código de município</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Enriquecimento com faixa de idade</p>
+<ul>
+<li><a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/ETL/Populacao/metodo-tceduca/package/exec_populacao_municipio_faixaidade_ano.py">exec_populacao_municipio_faixaidade_ano.py</a><ul>
+<li>Objetivo: Geração de relatório projecao_da_populacao por ano, municipio e faixa de idade.</li>
+<li>input:<ul>
+<li>Relatório projecao_da_populacao por ano, municipio e idade. Colunas: ['ano', 'municipio_codigo', 'idade', 'quantidade_estimada', 'estado_codigo']</li>
+</ul>
+</li>
+<li>output:<ul>
+<li>Relatório projecao_da_populacao por ano, municipio e faixa de idade. Colunas: ['ANO', 'FK_ESTADO_ID', 'FK_MUNICIPIO_ID', 'FK_FAIXAS_ETARIAS_ID', 'QUANTIDADE_ESTIMADA', 'FK_METODO_ID']</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Inserção no banco de dados:</p>
+<ul>
+<li><a href="https://github.com/aiboxlab-pne/dados/blob/main/Scripts/Pipeline-%20Meta%201/08_fct_progracao_populacional/exec_gerar_fckt_progracao_populacional.py">exec_gerar_fct_progracao_populacional.py</a><ul>
+<li>Objetivo: Criar tabela no banco de dados staging e efetua a ingestão dos dados</li>
+<li>Input:<ul>
+<li>projecao_da_populacao_por_ano_municipio_faixaidade. Colunas: ['ANO', 'FK_ESTADO_ID', 'FK_MUNICIPIO_ID', 'FK_FAIXAS_ETARIAS_ID', 'QUANTIDADE_ESTIMADA', 'FK_METODO_ID']
+<br /><code>Débito técnico:</code> Implantar capacidade de ingerir dados de um único novo ano.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
